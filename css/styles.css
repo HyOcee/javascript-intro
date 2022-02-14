@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+}
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(50, 0, 94),rgb(3, 67, 185),rgb(0, 93, 109),rgb(14, 141, 163),rgb(0, 133, 221));
+    padding: 3% 5%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 4rem;
+}
+
+.red {color: red;font-size: 3.5rem;}
+
+nav ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.container {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    color: #cf2f2f;
+    padding: 1.4rem 1.8rem;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    0% {transform: translate(-150%, 0px) rotate(0deg);}
+    100%{transform: translate(200%, 0px) rotate(360deg);}
+}
