@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>J-Script Lord</title>
+</head>
+<body>
+
+    <div class="calculator">
+        <div id="result"></div>
+
+        <div class="digits">
+            <button onclick="number(1)">1</button>
+            <button onclick="number(2)">2</button>
+            <button onclick="number(3)">3</button>
+            <button onclick="number(4)">4</button>
+            <button onclick="number(5)">5</button>
+            <button onclick="number(6)">6</button>
+            <button onclick="number(7)">7</button>
+            <button onclick="number(8)">8</button>
+            <button onclick="number(9)">9</button>
+            <button onclick="number(0)">0</button>
+        </div>
+
+        <div class="symbols">
+            <button onclick="operation('+')">+</button>
+            <button onclick="operation('-')">-</button>
+            <button onclick="operation('*')">*</button>
+            <button onclick="operation('/')">/</button>
+            <button onclick="operation('%')">%</button>
+        </div>
+
+        <button class="solve" onclick="solve()">Solve</button>
+    </div>
+    
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

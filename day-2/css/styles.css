@@ -1,0 +1,9 @@
+.digits button, .symbols button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+button.solve {
+    padding: 14px 18px;
+}
