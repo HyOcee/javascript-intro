@@ -1,0 +1,66 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+#form {
+    width: 30%;
+    min-width: 550px;
+    border-radius: 5px;
+}
+
+input, button {
+    border-radius: 5px; 
+    padding: 1rem;   
+    outline: 0;
+    display: block;
+    width: 100%;
+    margin: 3rem 0;
+    color: inherit;
+}
+
+#ul{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    display: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li div {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+li img {
+    display: block;
+    width: 100%;
+}
+
+::placeholder {
+    color: inherit;
+}
+
+@media only screen and (max-width: 650px) {
+    #form {
+        width: 80%;
+        min-width: unset;
+    }
+}

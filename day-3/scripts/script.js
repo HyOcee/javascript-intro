@@ -16,8 +16,22 @@
 //     }
 // }
 
+let inputData = document.getElementsByTagName('input');
+
+let optionData = document.getElementsByTagName('option');
+
+for (let i = 0; i < inputData.length; i++) {
+    console.log(inputData[i].value)
+}
+
+for (let i = 0; i < optionData.length; i++) {
+    console.log(optionData[i].value)
+}
+
 let dataIn = document.getElementsByTagName('input');
 
-for (let i = 0; i < dataIn.length; i++) {
-    console.log(dataIn[i].value)
-}
+    dataIn.push('jjj')
+
+    for (let i = 0; i < dataIn.length; i++) {
+        console.log(dataIn[i].value)
+    }
