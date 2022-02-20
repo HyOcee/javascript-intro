@@ -12,6 +12,15 @@ body {
     padding: 1rem;
 }
 
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
 #form {
     width: 30%;
     min-width: 550px;
@@ -30,7 +39,6 @@ input, button {
 
 #ul{
     width: 80%;
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 2rem;
     display: none;

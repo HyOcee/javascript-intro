@@ -11,14 +11,14 @@
     <ul id="ul">
         
     </ul>
-    <div id="form">
+    <form id="form">
         <input oninput="check()" id="email" type="text" placeholder="Enter your email" autofocus>
 
 
-        <input oninput="check()" id="password" type="password" required>
+        <input oninput="check()" id="password" type="password">
 
-        <button onclick="submit()" id="button" disabled>Log In</button>
-    </div>
+        <button onclick="submitForm(event)" id="button" >Log In</button>
+    </form>
 
 
 <script src="scripts/script.js"></script>
