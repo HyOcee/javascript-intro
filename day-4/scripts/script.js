@@ -4,10 +4,10 @@ let button = document.getElementById('button')
 let form = document.getElementById('form')
 
 const check = () => {
-    if(email.value && password.value){
+    if (email.value && password.value) {
         document.getElementById('button').removeAttribute('disabled')
     } else {
-        document.getElementById('button').setAttribute('disabled','')
+        document.getElementById('button').setAttribute('disabled', '')
     }
 }
 
@@ -23,15 +23,15 @@ const submitForm = (e) => {
         .then(response => response.json())
         .then(data => {
             data.forEach(element => {
-                ul.innerHTML += 
+                ul.innerHTML +=
                     `<li>
                         <div class="text">${element.name}</div>
                         <img src="${element.image.medium}">
                     </li>
                 `
                 ul.style.display = 'grid'
-        });
-    })
+            });
+        })
 }
 
 let formData = {
@@ -45,8 +45,18 @@ for (item in formData) {
     console.log(clone)
 }
 
+let  names= {
+            Helen: {
+                    height: '96ft',
+                    weight: '7kg'
+                },
+                JaeHee: {
+                    height: '6ft'
+                }
+            }
 
-// document.getElementById('form').innerHTML = 
+
+// document.getElementById('form').innerHTML =
 //         `<h1> Submitted!!! </h1>
 //           <p>thanks for your cooperation</p>
 //           <button style='width:30%; margin: 20px auto;'>Success!</button>`

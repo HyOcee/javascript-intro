@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 30%;
+    min-width: 550px;
+    border-radius: 5px;
+}
+
+input,
+button {
+    border-radius: 5px;
+    padding: 1rem;
+    outline: 0;
+    display: block;
+    width: 100%;
+    margin: 3rem 0;
+    color: inherit;
+}
+
+@media only screen and (max-width: 650px) {
+    #form {
+        width: 80%;
+        min-width: unset;
+    }
+}

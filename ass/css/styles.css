@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gr {
+    color: gray;
+}
+
+.bold-text-1 {
+    font-weight: 550;
+    font-size: 18px;
+}
+
+.bold-text-2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.senter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+    justify-content: unset;
+}
+
+.w-80 {
+    width: 75%;
+}
+
+.carousel {
+    width: 60%;
+    height: 60%;
+    padding: 3%;
+    position: relative;
+}
+
+#leftBtn, #rightBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#leftBtn {
+    left: 3%;
+}
+
+#rightBtn {
+    right: 3%;
+}
+
+.carousel > div {
+    width: 400px;
+    margin: auto;
+    display: none;
+}
+
+.carousel > div#u1 {
+    display: flex;
+}
+
+.carousel > div * {
+    margin-bottom: 10px;
+}
+
+.carousel .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 1px;
+    border: rgb(172, 59, 93) 5px solid;
+    transition: 0.5s;
+}
+
+.avatar img {
+    width: 90%;
+    height: 90%;
+    margin: 0;
+    border-radius: 50%;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+button.follow {
+    height: 50px;
+    width: 60%;
+    background-color: rgb(117, 22, 117);
+    color: white;
+    border-radius: 4px;
+    border: 0;
+}
+
+button.follow:hover {
+    background-color: rgb(145, 20, 145);
+}
+
+button.icon {
+    height: 50px;
+    width: 18%;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+button.icon:hover {
+    background-color: rgb(238, 237, 237);
+    border: 0;
+}
+
+.bio {
+    text-align: center;
+}

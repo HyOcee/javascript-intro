@@ -42,15 +42,17 @@ console.log(message)
 
 let result = document.querySelector('#result');
 
-result.innerHTML = 0;
+// result.innerHTML = 0;
 let operands = [0], i=1;
 
 const number = (num) => {
-    operands[i] = num;
-    i++;
-    console.log(operands)
-    result.innerHTML = result.innerHTML + num
+    // operands[i] = num;
+    // i++;
+    // console.log(operands)
+    result.innerHTML += num
 }
+
+number('Helen')
 
 var operator;
 

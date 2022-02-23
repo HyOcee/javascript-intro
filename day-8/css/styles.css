@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: unset;
+    padding: 3%;
+    justify-content: space-between;
+}
+
+#form {
+    width: 30%;
+    min-width: 550px;
+    border-radius: 5px;
+}
+
+#form input,
+button {
+    border-radius: 5px;
+    padding: 1rem;
+    outline: 0;
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    color: inherit;
+}
+
+ol li {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.carousel {
+    max-width: 600px;
+}
+
+.carousel > div {
+    /* display: flex; */
+    width: unset;
+    padding: 15px;
+    border: 1px solid ;
+}
+
+#leftBtn, #rightBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+}
+
+@media only screen and (max-width: 650px) {
+    #form {
+        width: 80%;
+        min-width: unset;
+    }
+}
